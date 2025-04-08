@@ -1,0 +1,16 @@
+bicycles
+boats
+bridges
+bus
+cars
+chimneys
+crosswalks
+firehydrant
+motorcycles
+mountain
+palmtrees
+parkingmeters
+stairs
+taxis
+tractors
+trafficlights
