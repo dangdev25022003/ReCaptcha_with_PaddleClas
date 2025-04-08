@@ -1,4 +1,7 @@
-giải mã capcha là một công viêc khá là phức tạp với nhiều bà toán khác nhau cho từng loại captcha. Trong dự án của mình tôi muốn ứng dụng AI vào việc giải quyết các bài toán liên quan đến Captcha. Cụ thể bài toán đầu tiên tôi ứng dụng việc này là về các bài toán lựa chọn đối tượng dựa vào text. RC3 với bài toán này tôi dùng đến Paddleclas của PaddlePaddleddaay là 1 framework thịnh hành và có độ chính xác cao cũng như tổng hợp nhiều loại model tốt nhất hiện nay.
+# Pretrain ReCaptcha_with_PaddleClas:
++ Achieve CELoss: 0.26281, loss: 0.26281, top1: 0.93864, top5: 0.99316.
+
+Giải mã capcha là một công viêc khá là phức tạp với nhiều bà toán khác nhau cho từng loại captcha. Trong dự án của mình tôi muốn ứng dụng AI vào việc giải quyết các bài toán liên quan đến Captcha. Cụ thể bài toán đầu tiên tôi ứng dụng việc này là về các bài toán lựa chọn đối tượng dựa vào text. RC3 với bài toán này tôi dùng đến Paddleclas của PaddlePaddleddaay là 1 framework thịnh hành và có độ chính xác cao cũng như tổng hợp nhiều loại model tốt nhất hiện nay.
 Về dữ liệu chúng tôi sẽ tìm và thu thập từ những API của các trang. Về model ở đây tôi sử dụng model EfficientB0, Vì sao sử dụng model này cho bài toán. Thứ nhất tối ưu cho việc tích hợp vào một hệ thống có thể cho sau này. Thức 2 tuy model nhẹ hơn rất nhiều so với các VS khác nhưng độ chính xác lại đạt ngữơng ấn tựng ngang ngữa với các VS khác và điển vượt trội như nêu trên là về thời gian Huấn luyện cũng như dự đoán là rất nhanh.
 Cách chạy thì hoàn toàn theo như cấu trúc của Paddle:
 Đầu tiên dự liệu:
