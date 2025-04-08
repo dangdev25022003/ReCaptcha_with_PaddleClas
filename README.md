@@ -3,7 +3,7 @@ Về dữ liệu chúng tôi sẽ tìm và thu thập từ những API của cá
 Cách chạy thì hoàn toàn theo như cấu trúc của Paddle:
 Đầu tiên dự liệu:
 Tất nhiên là với bài toán class việc chuẩn bị data chuẩn xác là quan trọng. Chúng tôi đã thu thập được hơn 5k data cho 16 class hay xuất hiện nhất. Tiếp đến bước xử lý data: khi thu thâp data dữ liệu rất tạp nham yêu cầu một số chọn lọc ở đây tôi sẽ áp dụng việc train một model nhỏ với lượng data chính xác mỗi class gồm 200 ảnh với YOLO. Sau đó sẽ dùng model này dự đoán trên toàn bộ tập dữ liệu. Tiếp đến với dữ liệu đã được phân nhãn trong 16 folder với độ chính xác đạt hơn 80% chúng tôi sử dụng một số phương pháp gồm so khớp hình ảnh để loại bỏ ảnh bị giống hệt nhau (Khó tránh khỏi khi clone data), và một số phương pháp khác bao gồm cả thủ công để chọn lọc ra lượng data chính xác nhất cho các class. Vấn đề kế tiếp là cần tăng cường để hạn chế mất cân bằng dữ liệu. Ở đây phương pháp tôi đưa ra là 50/50 nghĩa là dưới ngưỡng 50 % data của class đó thiếu so với class có nhiều data nhất thì sẽ tăng cường x2 đến x3 cho ảnh và trường hợp còn lại giữ nguyên. Sau khi đã xử lý data cuối cùng sẽ cố xấp xĩ 1000 ảnh cho mỗi class.
-![image](Ảnh chụp màn hình 2025-04-08 144640.png)
+![image](https://github.com/dangdev25022003/ReCaptcha_with_PaddleClas/blob/main/%E1%BA%A2nh%20ch%E1%BB%A5p%20m%C3%A0n%20h%C3%ACnh%202025-04-08%20144640.png)
 Cấu trúc data huấn luyện:
 ```dataset/
 ├── train/
